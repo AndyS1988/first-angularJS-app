@@ -23,9 +23,15 @@ label {
 	font-size: 3em;
 }
 
-#form {
-	width: 50%;
-	max-width: 400px;
+.btn-primary {
+	background-color: #b4b5bb;
+	border-style: none;
+}
+
+.btn-primary:visited,
+.btn-primary:hover {
+	background-color: #a4a5ab;
+	border-style: none;
 }
 
 #particles-js {
@@ -35,4 +41,14 @@ label {
 	top: 0px;
 	left: 0px;
 	z-index: -100;
+}
+
+#additional-information {
+	text-transform: lowercase;
+	font-style: italic;
+}
+
+#form {
+	width: 50%;
+	max-width: 400px;
 }

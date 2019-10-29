@@ -22,12 +22,26 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 	</head>
 	<div id="particles-js"></div>
-	<body ng-app="" class="text-center" style="background-color:{{color}}">
+	<body 
+		ng-app="myApp" 
+		class="text-center" 
+		style="background-color:{{color}}">
 		<header class="container">
-			<div class="jumbotron text-uppercase">
+			<div class="jumbotron text-uppercase" ng-controller="infoController">
 				<h1>Welcome to my first AngularJS app</h1>
 	 			<p>this app modifies its style based on your commands</p>
-				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+				<p>
+					<a class="btn btn-primary btn-lg"
+						ng-click="toggleCondition()" 
+						href="#" 
+						role="button"
+						style="color:{{color}}"
+						>Learn more
+					</a>
+				</p>
+				<div id="additional-information" ng-if="myCondition">
+					<p>Change appearance of this page either by voice commands (allow access to microphone), or by using the form below.</p>
+				</div>
 			</div>
 		</header>
 		<main class="container">
@@ -42,10 +56,9 @@
   					aria-describedby="sizing-addon1"
   					name="color">
   				<p class="small">Use key words such as: gray, yellow, lightblue, lightseagreen, mediumspringgreen, black, lavender, purple, navy, teal, antiquewhite, powderblue. . .</p>
+  				<p ng-show="color">Your enetered value: {{color | uppercase}}</p>
 			</div>
 		</main>
-
-
 
 	<!-- JavaScript files bellow -->
 		<!-- Jquery required for Bootstrap -->
