@@ -1,0 +1,37 @@
+{
+  "name": "angularjs",
+  "version": "1.0.0",
+  "description": "AngularJS app using IBM Watson API to react to speach commands to change it's own apperance",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyS1988/first-angularJS-app.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "IBM",
+    "Watson",
+    "Speach",
+    "to",
+    "Text",
+    "CSS",
+    "Styles",
+    "voice",
+    "commandas",
+    "voice",
+    "recognition"
+  ],
+  "author": "Andrea Spaska-Cox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndyS1988/first-angularJS-app/issues"
+  },
+  "homepage": "https://github.com/AndyS1988/first-angularJS-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
